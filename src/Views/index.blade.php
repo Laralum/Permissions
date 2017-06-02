@@ -31,7 +31,9 @@
                                     @forelse( $permissions as $permission )
                                         <tr>
                                             <td>{{ $permission->id }}</td>
-                                            <td>@include('laralum_permissions::if_permissions_</td>
+                                            <td>
+                                                @include('laralum_permissions::if_permissions_name')
+                                            </td>
                                             <td>{{ $permission->slug }}</td>
                                             <td class="uk-table-shrink">
                                                 <div class="uk-button-group">
